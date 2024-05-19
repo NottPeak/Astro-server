@@ -1,5 +1,5 @@
 self.__dynamic$config = {
-    prefix: '/~/dynamic/',
+    prefix: '/astro/~/dynamic/',
     encoding: 'xor',
     mode: 'production',
     logLevel: 0,
@@ -13,7 +13,7 @@ self.__dynamic$config = {
         ua: null,
     },
     assets: {
-        prefix: '/dynamic/',
+        prefix: '/astro/dynamic/',
         files: {
             handler: 'dynamic.handler.js',
             client: 'dynamic.client.js',

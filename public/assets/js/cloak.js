@@ -1,7 +1,7 @@
 let tab = localStorage.getItem('tab');
 const settingsDefaultTab = {
     title: 'Astro',
-    icon: '/assets/icons/logo.png',
+    icon: '/astro/assets/icons/logo.png',
 };
 
 const setTitle = (title) => {
@@ -62,53 +62,53 @@ const setCloak = () => {
     switch (cloak) {
         case 'search':
             setTitle('Google Search');
-            setFavicon('/assets/icons/cloaks/Google Search.ico');
+            setFavicon('/astro/assets/icons/cloaks/Google Search.ico');
 
             break;
         case 'drive':
             setTitle('Google Drive');
-            setFavicon('/assets/icons/cloaks/Google Drive.ico');
+            setFavicon('/astro/assets/icons/cloaks/Google Drive.ico');
 
             break;
         case 'youtube':
             setTitle('YouTube');
-            setFavicon('/assets/icons/cloaks/YouTube.ico');
+            setFavicon('/astro/assets/icons/cloaks/YouTube.ico');
 
             break;
         case 'gmail':
             setTitle('Gmail');
-            setFavicon('/assets/icons/cloaks/Gmail.ico');
+            setFavicon('/astro/assets/icons/cloaks/Gmail.ico');
 
             break;
         case 'calendar':
             setTitle('Google Calendar');
-            setFavicon('/assets/icons/cloaks/Calendar.ico');
+            setFavicon('/astro/assets/icons/cloaks/Calendar.ico');
 
             break;
         case 'meets':
             setTitle('Google Meet');
-            setFavicon('/assets/icons/cloaks/Meet.ico');
+            setFavicon('/astro/assets/icons/cloaks/Meet.ico');
 
             break;
         case 'classroom':
             setTitle('Google Classroom');
-            setFavicon('/assets/icons/cloaks/Classroom.png');
+            setFavicon('/astro/assets/icons/cloaks/Classroom.png');
 
             break;
         case 'canvas':
             setTitle('Canvas');
-            setFavicon('/assets/icons/cloaks/Canvas.ico');
+            setFavicon('/astro/assets/icons/cloaks/Canvas.ico');
 
             break;
         case 'zoom':
             setTitle('Zoom');
-            setFavicon('/assets/icons/cloaks/Zoom.ico');
+            setFavicon('/astro/assets/icons/cloaks/Zoom.ico');
 
             break;
 
         case 'khan':
             setTitle('Khan Academy');
-            setFavicon('/assets/icons/cloaks/Khan Academy.ico');
+            setFavicon('/astro/assets/icons/cloaks/Khan Academy.ico');
             break;
         
         default:

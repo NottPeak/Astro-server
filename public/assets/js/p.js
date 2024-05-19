@@ -17,7 +17,7 @@ const handleSubmit = (e) => {
         else if (proxy === 'dynamic') encodedUrl = __dynamic$config.prefix + window.__uv$config.encodeUrl(url);
 
         localStorage.setItem('url', encodedUrl);
-        location.href = '/go';
+        location.href = '/astro/go';
     } catch (e) {
         error.textContent = 'Failed to register service worker.';
         errorCode.textContent = e;
@@ -36,7 +36,7 @@ const openURL = async (link) => {
         else if (proxy === 'dynamic') encodedUrl = __dynamic$config.prefix + window.__uv$config.encodeUrl(url);
 
         localStorage.setItem('url', encodedUrl);
-        location.href = '/go';
+        location.href = '/astro/go';
     } catch (e) {
         error.textContent = 'Failed to register service worker.';
         errorCode.textContent = e;

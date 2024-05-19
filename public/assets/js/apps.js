@@ -1,4 +1,4 @@
-const renderApps = () => fetch('/assets/JSON/apps.json')
+const renderApps = () => fetch('/astro/JSON/apps.json')
     .then(res => res.json())
     .then(appsData => {
         const appContainer = document.querySelector('.app-container');

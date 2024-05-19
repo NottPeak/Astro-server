@@ -1,8 +1,8 @@
 (async () => {
-    const response = await fetch('/assets/JSON/g.json');
+    const response = await fetch('/astro/assets/JSON/g.json');
     const gs = await response.json();
     const container = document.querySelector('.gcontainer');
-    const gcdn = '/g/files/';
+    const gcdn = '/astro/g/files/';
 
     function renderg(g) {
         var gUrl = gcdn + g.root + '/' + g.file;
@@ -10,7 +10,7 @@
         link.className = 'g';
         link.addEventListener('click', (event) => {
             localStorage.setItem('url', `${gUrl}`);
-            window.location.href = '/go';
+            window.location.href = '/astro/go';
         });
 
         const img = document.createElement('img');

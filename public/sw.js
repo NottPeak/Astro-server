@@ -1,9 +1,9 @@
-importScripts('/dynamic/dynamic.config.js');
-importScripts('/dynamic/dynamic.worker.js');
+importScripts('/astro/dynamic/dynamic.config.js');
+importScripts('/astro/dynamic/dynamic.worker.js');
 
-importScripts('/uv/uv.bundle.js');
-importScripts('/uv/uv.config.js');
-importScripts(self.__uv$config.sw || '/uv/uv.sw.js');
+importScripts('/astro/uv/uv.bundle.js');
+importScripts('/astro/uv/uv.config.js');
+importScripts(self.__uv$config.sw || '/astro/uv/uv.sw.js');
 
 const uv = new UVServiceWorker();
 self.dynamic = new Dynamic(self.__dynamic$config);
